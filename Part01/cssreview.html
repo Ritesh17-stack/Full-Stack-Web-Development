@@ -77,17 +77,29 @@
             box-shadow: 0px 0px 3px 0px gray;
             padding: 20px;
         }
-        .myBtns{
+
+        .myBtns {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            margin-top : 20px;
+            margin-top: 20px;
         }
-        .myBtns > button{
-            margin-right: 10px; 
+
+        .myBtns>button {
+            margin-right: 10px;
         }
     </style>
+
+    <!-- script tag is used to add javascript in the html -->
+    <script>
+        // Creating a function
+        function hello() {
+            alert("Saved!!") //alert() is a inbuild function which pops up any alert or message on browser
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -116,7 +128,7 @@
             <label for="floatingTextarea">Comment</label>
         </div>
         <div class="myBtns">
-            <button type="button" class="btn btn-dark">Save</button>
+            <button onclick="hello()" type="button" class="btn btn-dark">Save</button>
             <button type="button" class="btn btn-outline-dark">Close</button>
         </div>
     </div>
